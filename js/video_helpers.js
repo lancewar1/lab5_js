@@ -9,13 +9,13 @@ function selectVideo(e, clip)
 	{
 		if(clip.textTracks.length > 0) {
 			
-			//set all tracks inactive
+			
 			for (let track of clip.textTracks) {
 				track.mode = 'hidden';
 				track.selected = false;
 			}
 
-			//turn on the selected track 
+			
 			const theTrack = clip.textTracks.getTrackById(id);
 			console.log(theTrack);
 			theTrack.selected = true;
@@ -55,10 +55,7 @@ function selectVideo(e, clip)
 		clip.currentTime = 0;
 	}
 
-	// rate can be a positive integer
-	// .5 is half speed, 1 is normal speed,
-	// 2 is double speed, etc.
-	//Only Safari supports negative values (backwards)
+	
 	function playRate(clip, rate) 
 	{
 		clip.playbackRate = rate;

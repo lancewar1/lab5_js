@@ -11,13 +11,16 @@
     <script type="module" src="js/main.js"></script>
 </head>
 
-<body>
+<body id="background">
     <h1>Lab 5: Popeye</h1>
     <video id="vid" controls>
         <source src="assets/005.5 Let's Sing with Popeye (1934).mp4" type="video/mp4">
         <source src="assets/005.5 Lets Sing with Popeye (1934).webm" type="video/webm">
-        <track id="en" kind="captions" label="english (captions)" srclang="en" src="">
+        <track id="en" kind="captions" label="english (captions)" srclang="en" src="subtitles/captions(2).vtt">
     </video>
+    <div class="img">
+        <img class="hide" id="img" src="assets/gil-ndjouwou-3YTtK5LRtDI-unsplash.jpg" alt="">
+    </div>
     <div id="controls">
         <form id="video_form">
             <fieldset>

@@ -1,0 +1,13 @@
+img{
+    width: 500px;
+    position: absolute;
+    top: 2rem;
+    right: 3rem;
+}
+video{
+    width: 500px;
+}
+
+.hide{
+    display: none; 
+}
