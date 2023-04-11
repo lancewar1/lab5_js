@@ -8,10 +8,6 @@ function init() {
    myCues = [
         { seconds: 2, callback: func1 },
         { seconds: 20, callback: func2 },
-        { seconds: 15, callback: func3 },
-        { seconds: 25, callback: func6 },
-        { seconds: 37, callback: func4 },
-        { seconds: 50, callback: func5 }
     ];
 
     
