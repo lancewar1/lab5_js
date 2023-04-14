@@ -6,8 +6,10 @@ function init() {
 
     
    myCues = [
-        { seconds: 2, callback: func1 },
+        { seconds: 52, callback: func1 },
         { seconds: 20, callback: func2 },
+        {seconds: 10, callback: func3}, 
+        {seconds: 9, callback: func4},
     ];
 
     
@@ -30,17 +32,26 @@ function init() {
 }
 
 
-
-
-
 function func1() {
-    document.getElementById("background").style.backgroundColor="blue"; 
+    let bubble = document.querySelector(".bubble");
+    bubble.innerHTML = "<p>Sing with Me!</p>";
+    document.querySelector(".bubble").classList.toggle("hide");
+    setTimeout(() => {
+        document.querySelector(".bubble").classList.toggle("hide");
+    }, 4000);
 }
 
 function func2(){
-    const spinach = document.getElementById("img"); 
+    const spinach = document.getElementById("spinach"); 
     spinach.classList.toggle("hide")
     setTimeout(() =>{
-        document.getElementById("img").classList.toggle("hide");
+        document.getElementById("spinach").classList.toggle("hide");
     },3000);
+}
+
+function func3(){
+    document.querySelector(".popeye").style.animation = "move 2s infinite";
+}
+function func4(){
+    document.querySelector(".popeye").classList.toggle("hide");
 }
